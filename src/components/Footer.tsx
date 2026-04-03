@@ -1,4 +1,4 @@
-import { MapPinIcon, PhoneIcon, MailIcon } from 'lucide-react';
+import { MapPinIcon, PhoneIcon, MailIcon } from "lucide-react";
 export function Footer() {
   return (
     <footer className="w-full bg-bgDark border-t border-white/5 py-12 px-8 md:px-16 lg:px-24">
@@ -9,8 +9,9 @@ export function Footer() {
             DigiVera
           </h3>
           <p className="text-textMuted text-sm leading-relaxed font-body">
-            Integrated IT, automation, customer support, and workforce management
-services — accelerating digital transformation for businesses worldwide.
+            Integrated IT, automation, customer support, and workforce
+            management services — accelerating digital transformation for
+            businesses worldwide.
           </p>
         </div>
 
@@ -24,28 +25,34 @@ services — accelerating digital transformation for businesses worldwide.
               <MapPinIcon
                 className="text-textMuted mt-0.5 flex-shrink-0"
                 size={18}
-                strokeWidth={1.5} />
-              
+                strokeWidth={1.5}
+              />
+
               <span className="text-textMuted text-sm font-body">
-                Noida, Uttar Pradesh
+                G-103, AceCity, Sector 1, Greater Noida West, Uttar
+                Pradesh-201306
               </span>
             </li>
             <li className="flex items-center gap-3">
               <PhoneIcon
                 className="text-textMuted flex-shrink-0"
                 size={18}
-                strokeWidth={1.5} />
-              
-              <span className="text-textMuted text-sm font-body">+91 9958795117</span>
+                strokeWidth={1.5}
+              />
+
+              <span className="text-textMuted text-sm font-body">
+                +91 9958795117, +91 8826133550
+              </span>
             </li>
             <li className="flex items-center gap-3">
               <MailIcon
                 className="text-textMuted flex-shrink-0"
                 size={18}
-                strokeWidth={1.5} />
-              
+                strokeWidth={1.5}
+              />
+
               <span className="text-textMuted text-sm font-body">
-                digiveratecnologoies@gmail.com
+                customersupport@digivera.co.in
               </span>
             </li>
           </ul>
@@ -57,10 +64,11 @@ services — accelerating digital transformation for businesses worldwide.
             Compliance
           </h3>
           <p className="text-textMuted text-sm font-body mt-1">
-            © 2026 DigiVera Healthcare Services LLP. All rights reserved.
+            © 2026 DigiVera Technologies India Pvt. Limited. All rights
+            reserved.
           </p>
         </div>
       </div>
-    </footer>);
-
+    </footer>
+  );
 }
