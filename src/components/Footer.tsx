@@ -41,7 +41,7 @@ export function Footer() {
               />
 
               <span className="text-textMuted text-sm font-body">
-                +91 9958795117, +91 8826133550
+                +91 9958795117, +91 8826133550 & +91 88268 97928
               </span>
             </li>
             <li className="flex items-center gap-3">
