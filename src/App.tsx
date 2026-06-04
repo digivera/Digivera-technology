@@ -1,31 +1,31 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
-import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
-import { ServicesPage } from './pages/ServicesPage';
-import { WhyUsPage } from './pages/WhyUsPage';
-import { ContactPage } from './pages/ContactPage';
-import { IndustriesSection } from './components/IndustriesSection';
-export function App() {
+﻿import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import Services from './pages/Services';
+import Industries from './pages/Industries';
+import WhyUs from './pages/WhyUs';
+import ScrollToTop from './components/ScrollToTop';
+import Terms from './pages/Terms';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+
+
+function App() {
   return (
     <BrowserRouter>
-      <div className="relative w-full min-h-screen flex flex-col font-body selection:bg-accentCyan/30 selection:text-white">
-        <Navbar />
-
-        <main className="flex-1 pt-[72px]">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/industries" element={<IndustriesSection />} />
-            <Route path="/why-us" element={<WhyUsPage />} />
-          </Routes>
-        </main>
-
-        <Footer />
-      </div>
-    </BrowserRouter>);
-
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/why-us" element={<WhyUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
+
+export default App;
