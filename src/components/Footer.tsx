@@ -75,12 +75,12 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
         {/* Copyright */}
         <div className="copyright">
           <div className="row">
-            <div className="col-md-3 wow fadeInLeft" data-wow-delay="0.1s">
+            {/* <div className="col-md-3 wow fadeInLeft" data-wow-delay="0.1s">
               <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms">Terms and Conditions</Link>
             </div>
             <div className="col-md-5 wow fadeInUp" data-wow-delay="0.1s">
               <p>&copy; 2026 DigiVera Technologies India Pvt. Limited. All rights reserved.</p>
-            </div>
+            </div> */}
             <div className="col-md-4 wow fadeInRight" data-wow-delay="0.1s">
               <p><a href="https://www.multidimensionwebsolutions.com/" target="_blank" rel="noopener noreferrer">Powered By Multi Dimension Web Solutions</a></p>
             </div>
