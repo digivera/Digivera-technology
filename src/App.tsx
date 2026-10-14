@@ -22,9 +22,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/why-us" element={<WhyUs />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        {/* <Route path="/terms" element={<Terms />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
+        <Route path="/contact-us" element={<ContactUs />} />        
       </Routes>
     </BrowserRouter>
   );

@@ -15,11 +15,11 @@ const Clients = () => {
   const swiperRef = useRef<{ destroy: (deleteInstance?: boolean, cleanStyles?: boolean) => void } | null>(null);
 
   const clientLogos = [
-    '/assets/img/client1.png',
-    '/assets/img/client2.png',
-    '/assets/img/client3.png',
-    '/assets/img/client4.png',
-    '/assets/img/client5.png',
+    '/assets/img/client1.webp',
+    '/assets/img/client2.webp',
+    '/assets/img/client3.webp',
+    '/assets/img/client4.webp',
+    '/assets/img/client5.webp',
   ];
 
   useEffect(() => {

@@ -31,7 +31,7 @@ const HeroCarousel = () => {
               <div className="row stats mt-5 wow fadeInUp" data-wow-delay="0.3s">
 
                 <div className="col-md-4 col-12 stat-box">
-                  <h2><CountUpNumber target={5000} className="counter" />+</h2>
+                  <h2><CountUpNumber target={50} className="counter" /> +</h2>
                   <p>Happy Customers</p>
                 </div>
 

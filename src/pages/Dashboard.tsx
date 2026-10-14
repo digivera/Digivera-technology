@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import HeroCarousel from '../components/HeroCarousel';
 import WhyChooseUs from '../components/WhyChooseUs';
 import About from '../components/About';
-import FAQ from '../pages/FAQ';
 import Services from '../components/Services';
 import Industries from '../components/Industries';
 import Founders from '../components/Founders';
@@ -26,10 +25,7 @@ const Dashboard = () => {
       <Founders />
       <Approach />
       <Industries />
-
-      <FAQ />
-
-      <Footer addTFiveClass={false} />
+      <Footer />
 
     </>
   );

@@ -1,276 +1,121 @@
+import { Fragment, memo } from "react";
 
+type Service = {
+  icon: string;
+  /** Each entry is rendered on its own line inside the <h3> */
+  title: readonly string[];
+  /** Each entry is rendered on its own line inside the <p> */
+  points: readonly string[];
+  animation: "fadeInLeft" | "fadeInDown" | "fadeInRight" | "fadeInUp";
+};
 
+/* Defined once, outside the component */
+const SERVICES: readonly Service[] = [
+  {
+    icon: "bi-display",
+    title: ["SOFTWARE", "DEVELOPMENT"],
+    points: ["Web & Mobile App Development", "Enterprise Software Solutions", "API Development & Integration"],
+    animation: "fadeInLeft",
+  },
+  {
+    icon: "bi-cpu",
+    title: ["AI", "SOLUTIONS"],
+    points: ["Predictive Analytics.", "AI Chatbots & Virtual Assistants.", "Data Intelligence & Insights."],
+    animation: "fadeInDown",
+  },
+  {
+    icon: "bi-gear",
+    title: ["AUTOMATION", "SOLUTIONS"],
+    points: ["Robotic Process Automation (RPA).", "Workflow Automation.", "Process Optimization."],
+    animation: "fadeInDown",
+  },
+  {
+    icon: "bi-megaphone",
+    title: ["DIGITAL", "MARKETING"],
+    points: ["SEO & Performance Marketing.", "Social Media Marketing.", "Lead Generation."],
+    animation: "fadeInRight",
+  },
+  {
+    icon: "bi-shield-check",
+    title: ["CYBERSECURITY", "& MANAGEMENT"],
+    points: ["VAPT.", "Network & Application Security.", "Security Audits & Risk Management."],
+    animation: "fadeInLeft",
+  },
+  {
+    icon: "bi-file-earmark-check",
+    title: ["COMPLIANCE", "& RISK"],
+    points: ["Compliance Consulting.", "Policy Development.", "Audit Support & Risk Assessment."],
+    animation: "fadeInUp",
+  },
+  {
+    icon: "bi-headset",
+    title: ["CALL CENTER /", "BPO"],
+    points: ["Inbound & Outbound Call Services.", "Customer Support Operations.", "Back Office Processing."],
+    animation: "fadeInUp",
+  },
+  {
+    icon: "bi-tools",
+    title: ["HELPDESK &", "IT SUPPORT"],
+    points: ["24/7 IT helpdesk, infrastructure management and end-user support services."],
+    animation: "fadeInRight",
+  },
+];
 
+/** Renders strings separated by <br /> (no trailing break) */
+const Lines = ({ lines }: { lines: readonly string[] }) => (
+  <>
+    {lines.map((line, i) => (
+      <Fragment key={line}>
+        {i > 0 && <br />}
+        {line}
+      </Fragment>
+    ))}
+  </>
+);
 
 const Services = () => {
   return (
-    <section className="digi-services-section dark_bg">
-
+    <section className="digi-services-section dark_bg" aria-labelledby="services-heading">
       <div className="container digi-services-container">
-
-
-
-
+        {/* HEADING */}
         <div className="digi-about-content text-center full-w wow fadeInDown" data-wow-delay="0.5s">
+          <div className="digi-about-tag">OUR SERVICES</div>
 
-          <div className="digi-about-tag">
-            OUR SERVICES
-          </div>
-
-          <h2 className="digi-about-title">
+          <h2 className="digi-about-title" id="services-heading">
             END-TO-END SERVICES THAT <br />
             <span>SCALE YOUR BUSINESS</span>
           </h2>
 
           <p className="digi-subtitle-text">
-            A full stack of capabilities — from custom software and AI to BPO and managed IT support
-            — delivered by a single accountable partner.
+            A full stack of capabilities — from custom software and AI to BPO and managed IT support — delivered by a
+            single accountable partner.
           </p>
         </div>
 
-
-
-
+        {/* SERVICE CARDS */}
         <div className="row">
+          {SERVICES.map(({ icon, title, points, animation }) => (
+            <div className="col-12 col-md-6 col-lg-3" key={title.join(" ")}>
+              <div className={`digi-service-item wow ${animation}`} data-wow-delay="0.1s">
+                <div className="digi-service-icon">
+                  <i className={`bi ${icon}`} aria-hidden="true" />
+                </div>
 
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInLeft" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-display"></i>
+                <div className="digi-service-content">
+                  <h3>
+                    <Lines lines={title} />
+                  </h3>
+                  <p>
+                    <Lines lines={points} />
+                  </p>
+                </div>
               </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  SOFTWARE <br />
-                  DEVELOPMENT
-                </h3>
-
-                <p>
-                  Web &amp; Mobile App Development<br />
-                  Enterprise Software Solutions<br />
-                  API Development &amp; Integration
-                </p>
-
-              </div>
-
             </div>
-
-          </div>
-
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInDown" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-cpu"></i>
-              </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  AI <br />
-                  SOLUTIONS
-                </h3>
-
-                <p>
-                  Predictive Analytics.<br />
-                  AI Chatbots &amp; Virtual Assistants.<br />
-                  Data Intelligence &amp; Insights.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInDown" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-gear"></i>
-              </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  AUTOMATION <br />
-                  SOLUTIONS
-                </h3>
-
-                <p>
-                  Robotic Process Automation (RPA).<br />
-                  Workflow Automation.<br />
-                  Process Optimization.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInRight" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-megaphone"></i>
-              </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  DIGITAL <br />
-                  MARKETING
-                </h3>
-
-                <p>
-                  SEO &amp; Performance Marketing.<br />
-                  Social Media Marketing.<br />
-                  Lead Generation.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInLeft" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-shield-check"></i>
-              </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  CYBERSECURITY <br />
-                  &amp; MANAGEMENT
-                </h3>
-
-                <p>
-                  VAPT.<br />
-                  Network &amp; Application Security.<br />
-                  Security Audits &amp; Risk Management.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInUp" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-file-earmark-check"></i>
-              </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  COMPLIANCE <br />
-                  &amp; RISK
-                </h3>
-
-                <p>
-                  Compliance Consulting.<br />
-                  Policy Development.<br />
-                  Audit Support &amp; Risk Assessment.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInUp" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-headset"></i>
-              </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  CALL CENTER / <br />
-                  BPO
-                </h3>
-
-                <p>
-                  Inbound &amp; Outbound Call Services.<br />
-                  Customer Support Operations.<br />
-                  Back Office Processing.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="col-lg-3 col-md-6">
-
-            <div className="digi-service-item wow fadeInRight" data-wow-delay="0.1s">
-
-              <div className="digi-service-icon">
-                <i className="bi bi-tools"></i>
-              </div>
-
-              <div className="digi-service-content">
-
-                <h3>
-                  HELPDESK &amp; <br />
-                  IT SUPPORT
-                </h3>
-
-                <p>
-                  24/7 IT helpdesk, infrastructure
-                  management and end-user
-                  support services.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
+          ))}
         </div>
-
       </div>
-
     </section>
-
   );
 };
 
-export default Services;
+export default memo(Services);

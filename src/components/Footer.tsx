@@ -1,10 +1,8 @@
-
 import { Link } from 'react-router-dom';
-
-
 interface FooterProps {
   addTFiveClass?: boolean;
 }
+
 const Footer = ({ addTFiveClass = true }: FooterProps) => {
   return (
     <footer className={`footer-section ${addTFiveClass ? 'pt-5' : ''}`}>
@@ -14,7 +12,7 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
           {/* Logo + About */}
           <div className="col-lg-3 col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
             <div className="footer-logo">
-              <img src="/assets/img/logo.png" alt="DigiVera Logo" />
+              <img src="/assets/img/logo.webp" width={230} height={74} fetchPriority="high" alt="DigiVera Logo" />
             </div>
             <p className="footer-text">
               Integrated IT, automation, customer support, and workforce
@@ -57,8 +55,7 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
               </li>
               <li>
                 <i className="fa-solid fa-phone"></i>
-                <span>+91 87962 94441, +91 87962 94442, <br />
-                  +91 87962 94443</span>
+                <span>+91 87962 94441, +91 87962 94442 <br /></span>
               </li>
               <li>
                 <i className="fa-solid fa-envelope"></i>
@@ -66,26 +63,8 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
               </li>
             </ul>
           </div>
-
         </div>
-
-        {/* Divider */}
-        <div className="footer-divider"></div>
-
-        {/* Copyright */}
-        <div className="copyright">
-          <div className="row">
-            {/* <div className="col-md-3 wow fadeInLeft" data-wow-delay="0.1s">
-              <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms">Terms and Conditions</Link>
-            </div>
-            <div className="col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-              <p>&copy; 2026 DigiVera Technologies India Pvt. Limited. All rights reserved.</p>
-            </div> */}
-            <div className="col-md-4 wow fadeInRight" data-wow-delay="0.1s">
-              <p><a href="https://www.multidimensionwebsolutions.com/" target="_blank" rel="noopener noreferrer">Powered By Multi Dimension Web Solutions</a></p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </footer>
   );
