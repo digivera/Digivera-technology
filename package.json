@@ -12,9 +12,11 @@
     "prebuild": "npm run css:min"
   },
   "dependencies": {
+    "@emailjs/browser": "^5.0.3",
     "lucide-react": "^1.52.0",
     "nodemailer": "^10.0.16",
     "react": "^19.2.5",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.5",
     "react-hook-form": "^7.89.0",
     "react-router-dom": "^7.14.2"
