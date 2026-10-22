@@ -53,7 +53,20 @@ const HeroCarousel = () => {
           {/* Right Image */}
           <div className="col-lg-5">
             <div className="hero-image wow fadeInRight" data-wow-delay="0.5s">
-              <img src="/assets/img/hero.gif" alt="AI Robot" />
+              <video
+                className="hero-media"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                width="534"
+                height="668"
+                poster="/assets/img/hero-poster.webp"
+                aria-label="AI Robot">
+                <source src="/assets/img/hero.webm" type="video/webm" />
+                <source src="/assets/img/hero.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
 

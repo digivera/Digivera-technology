@@ -7,9 +7,7 @@ import Industries from './pages/Industries';
 import WhyUs from './pages/WhyUs';
 import ScrollToTop from './components/ScrollToTop';
 import CanonicalTag from './components/CanonicalTag';
-// import Terms from './pages/Terms';
-// import PrivacyPolicy from './pages/PrivacyPolicy';
-
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -22,7 +20,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/why-us" element={<WhyUs />} />
-        <Route path="/contact-us" element={<ContactUs />} />        
+        <Route path="/contact-us" element={<ContactUs />} />   
+        <Route path="*" element={<NotFound />} />     
       </Routes>
     </BrowserRouter>
   );

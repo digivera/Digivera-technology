@@ -17,9 +17,7 @@ const Dashboard = () => {
       <Spinner />
       <Header />
       <HeroCarousel />
-
       <About />
-
       <Services />
       <WhyChooseUs />
       <Founders />
