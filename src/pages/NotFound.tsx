@@ -62,7 +62,7 @@ export default function NotFound() {
             {reducedMotion ? (
               <img src="/assets/img/hero-poster.webp" alt="" className="object-fit-cover" />
             ) : (
-              <video className="object-fit-cover" autoPlay loop muted playsInline preload="metadata" poster="/assets/img/hero-poster.webp" tabIndex={-1} >
+              <video className="object-fit-cover" autoPlay loop muted playsInline preload="metadata" tabIndex={-1} >
                 <source src="/assets/img/404.webm" type="video/webm" />
                 <source src="/assets/img/404.mp4" type="video/mp4" />
               </video>

@@ -14,7 +14,7 @@ const Header = () => {
 
             {/* LEFT INFO */}
             <div className="col-lg-10 col-md-10 col-12 text-md-start text-center mb-2 mb-md-0">
-              <ul className="list-inline mb-0 top-info wow fadeInLeft" data-wow-delay="0.1s">
+              <ul className="list-inline mb-0 top-info" >
 
                 <li className="list-inline-item me-3">
                   <i className="bi bi-telephone-fill"></i>
@@ -36,7 +36,7 @@ const Header = () => {
 
             {/* SOCIAL ICONS */}
             <div className="col-lg-2 col-md-2 col-12 text-md-end text-center">
-              <div className="social-icons wow fadeInRight" data-wow-delay="0.1s">
+              <div className="social-icons " >
 
                 <a href="javascript:void(0)" className="text-danger" aria-label="Instagram">
                   <i className="bi bi-instagram"></i>
@@ -62,7 +62,7 @@ const Header = () => {
         <div className="container">
 
           {/* LOGO */}
-          <Link className="navbar-brand d-flex align-items-center wow fadeInLeft" data-wow-delay="0.1s" to="/">
+          <Link className="navbar-brand d-flex align-items-center "  to="/">
             <img src="/assets/img/logo.webp" width={230} height={74} fetchPriority="high" alt="logo" className="logo-img" />
           </Link>
 
@@ -73,7 +73,7 @@ const Header = () => {
 
           {/* MENU */}
           <div className="collapse navbar-collapse justify-content-end" id="mainNav">
-            <ul className="navbar-nav wow fadeInRight" data-wow-delay="0.1s">
+            <ul className="navbar-nav " >
 
               <li className="nav-item">
                 <Link className={getActiveClass("/")} to="/">HOME</Link>

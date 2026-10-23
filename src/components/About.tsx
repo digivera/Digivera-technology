@@ -8,7 +8,7 @@ const About = () => {
             {/* LEFT IMAGE */}
 
             <div className="col-lg-6">
-              <div className="digi-about-image wow fadeInLeft" data-wow-delay="0.1s">
+              <div className="digi-about-image " >
                 <img src="/assets/img/about-us.webp" alt="About Us" />
               </div>
             </div>
@@ -17,7 +17,7 @@ const About = () => {
 
             <div className="col-lg-6">
 
-              <div className="digi-about-main wow fadeInRight" data-wow-delay="0.1s">
+              <div className="digi-about-main" >
                 <div className="digi-about-content">
                   <div className="digi-about-tag">
                     ABOUT US
@@ -42,7 +42,7 @@ const About = () => {
                     {/* VISION */}
 
                     <div className="col-md-6">
-                      <div className="digi-info-box digi-vision-box wow fadeInUp" data-wow-delay="0.6s">
+                      <div className="digi-info-box digi-vision-box">
                         <h3 className="digi-info-title">OUR VISION</h3>
                         <p className="digi-info-text">
                           To be a globally recognized technology and business
@@ -55,7 +55,7 @@ const About = () => {
                     {/* MISSION */}
 
                     <div className="col-md-6">
-                      <div className="digi-info-box digi-mission-box wow fadeInUp" data-wow-delay="0.6s">
+                      <div className="digi-info-box digi-mission-box">
                         <h3 className="digi-info-title">OUR MISSION</h3>
                         <p className="digi-info-text">
                           To deliver high-quality, scalable, and secure

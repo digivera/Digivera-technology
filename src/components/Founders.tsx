@@ -69,7 +69,7 @@ const About = () => {
 
             return (
               <div className="col-12 col-lg-6" key={f.id}>
-                <article className={`founder-card card shadow-sm border-0 wow ${f.animation}`} data-wow-delay="0.1s">
+                <article className={`founder-card card shadow-sm border-0 wow ${f.animation}`} >
                   <div className="card-body p-3 p-md-4">
                     <div className="row g-3 align-items-start">
                       {/* Image: centered half-width on phones, 1/3 beside text from sm up */}

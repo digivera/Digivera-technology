@@ -63,7 +63,7 @@ const Clients = () => {
     <section className="cl-section">
       <div className="container text-center">
 
-        <div className="w-100 title_sec wow fadeInDown" data-wow-delay="0.1s">
+        <div className="w-100 title_sec wow fadeInDown" >
           <h2 className="main-title">Take a Look at Our Clients</h2>
           <p className="subtitle">
             Trusted by 120+ hospitals, we bring reliability, speed, and quality to healthcare
@@ -71,7 +71,7 @@ const Clients = () => {
           </p>
         </div>
 
-        <div className="cl-wrapper wow fadeInUp" data-wow-delay="0.1s">
+        <div className="cl-wrapper wow fadeInUp" >
 
           {/* LEFT BUTTON */}
           <button className="cl-btn cl-prev" ref={prevRef} aria-label="Previous clients" type="button">
