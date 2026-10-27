@@ -22,7 +22,7 @@ const Industries = () => {
     <section className="industries-section" aria-labelledby="industries-heading">
       <div className="container">
         {/* HEADING */}
-        <div className="digi-about-content text-center full-w wow fadeInDown" data-wow-delay="0.1s">
+        <div className="digi-about-content text-center full-w wow fadeInDown" >
           <div className="digi-about-tag">INDUSTRIES</div>
 
           <h2 className="digi-about-title" id="industries-heading">

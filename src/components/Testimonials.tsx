@@ -108,7 +108,7 @@ const Testimonials = () => {
         <div className="row align-items-center">
           {/* LEFT CONTENT */}
           <div className="col-lg-4 mb-4">
-            <div className="w-100 title_sec wow fadeInLeft" data-wow-delay="0.1s">
+            <div className="w-100 title_sec " >
               <p className="lb-tag">TESTIMONIALS</p>
               <h2 className="main-title" id="testimonials-heading">
                 What Our Customers Say
@@ -122,7 +122,7 @@ const Testimonials = () => {
 
           {/* RIGHT SLIDER */}
           <div className="col-lg-8">
-            <div className="swiper wow fadeInUp" data-wow-delay="0.1s" ref={containerRef}>
+            <div className="swiper wow fadeInUp"  ref={containerRef}>
               <div className="swiper-wrapper">
                 {TESTIMONIALS.map(({ id, name, role, quote, image }) => (
                   <div className="swiper-slide" key={id}>

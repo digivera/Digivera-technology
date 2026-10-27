@@ -78,7 +78,7 @@ const Services = () => {
     <section className="digi-services-section dark_bg" aria-labelledby="services-heading">
       <div className="container digi-services-container">
         {/* HEADING */}
-        <div className="digi-about-content text-center full-w wow fadeInDown" data-wow-delay="0.5s">
+        <div className="digi-about-content text-center full-w">
           <div className="digi-about-tag">OUR SERVICES</div>
 
           <h2 className="digi-about-title" id="services-heading">
@@ -96,7 +96,7 @@ const Services = () => {
         <div className="row">
           {SERVICES.map(({ icon, title, points, animation }) => (
             <div className="col-12 col-md-6 col-lg-3" key={title.join(" ")}>
-              <div className={`digi-service-item wow ${animation}`} data-wow-delay="0.1s">
+              <div className={`digi-service-item wow ${animation}`} >
                 <div className="digi-service-icon">
                   <i className={`bi ${icon}`} aria-hidden="true" />
                 </div>

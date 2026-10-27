@@ -41,7 +41,7 @@ const FAQ = () => {
           <div className="row gy-4 gy-lg-0 align-items-start">
             {/* Left column */}
             <div className="col-12 col-lg-5">
-              <div className="digi-about-content wow fadeInLeft">
+              <div className="digi-about-content ">
                 <div className="digi-about-tag">FAQ</div>
                 <h2 className="digi-about-title">
                   MOST COMMON QUESTIONS <span>ABOUT OUR SERVICES</span>
@@ -57,7 +57,7 @@ const FAQ = () => {
 
             {/* Right column */}
             <div className="col-12 col-lg-7">
-              <div className="accordion wow fadeInRight" id="faqAccordion">
+              <div className="accordion " id="faqAccordion">
                 {FAQ_ITEMS.map(({ id, question, answer }) => {
                   const isOpen = openId === id;
                   return (

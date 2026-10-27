@@ -10,7 +10,7 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
         <div className="row gy-4">
 
           {/* Logo + About */}
-          <div className="col-lg-3 col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
+          <div className="col-lg-3 col-md-6 " >
             <div className="footer-logo">
               <img src="/assets/img/logo.webp" width={230} height={74} fetchPriority="high" alt="DigiVera Logo" />
             </div>
@@ -22,7 +22,7 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
           </div>
 
           {/* Services */}
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div className="col-lg-3 col-md-6">
             <h3 className="footer-title">Useful Links</h3>
             <ul className="footer-links">
               <li><Link to="/"><i className="fa-solid fa-arrow-right"></i>Home</Link></li>
@@ -34,7 +34,7 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
           </div>
 
           {/* Services Duplicate */}
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div className="col-lg-3 col-md-6">
             <h3 className="footer-title">Our Services</h3>
             <ul className="footer-links">
               <li><Link to="/services"><i className="fa-solid fa-arrow-right"></i>Software Development</Link></li>
@@ -46,7 +46,7 @@ const Footer = ({ addTFiveClass = true }: FooterProps) => {
           </div>
 
           {/* Contact */}
-          <div className="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay="0.7s">
+          <div className="col-lg-3 col-md-6 ">
             <h3 className="footer-title contact-title">Contact Details</h3>
             <ul className="contact-list">
               <li>

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import CountUpNumber from './CountUpNumber';
 
@@ -11,24 +10,24 @@ const HeroCarousel = () => {
           {/* Left Content */}
           <div className="col-lg-7">
             <div className="hero-content">
-              <h1 className="wow fadeInLeft" data-wow-delay="0.1s">
+              <h1>
                 Driving <span>Innovation</span><br />
                 &amp; Automation For<br />
                 Sustainable Growth.
               </h1>
 
-              <p className="wow fadeInLeft" data-wow-delay="0.2s">
+              <p>
                 Integrated IT, automation, customer support, and workforce
                 management services — accelerating digital transformation
               </p>
 
-              <div className="d-flex flex-wrap gap-3 wow fadeInLeft" data-wow-delay="0.3s">
+              <div className="d-flex flex-wrap gap-3 ">
                 <Link to="/services" className="btn btn-custom btn-blue">Explore Services</Link>
                 <Link to="/contact-us" className="btn btn-custom btn-green">Contact Us</Link>
               </div>
 
               {/* Counters */}
-              <div className="row stats mt-5 wow fadeInUp" data-wow-delay="0.3s">
+              <div className="row stats mt-5">
 
                 <div className="col-md-4 col-12 stat-box">
                   <h2><CountUpNumber target={50} className="counter" /> +</h2>
@@ -52,24 +51,13 @@ const HeroCarousel = () => {
 
           {/* Right Image */}
           <div className="col-lg-5">
-            <div className="hero-image wow fadeInRight" data-wow-delay="0.5s">
-              <video
-                className="hero-media"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                width="534"
-                height="668"
-                poster="/assets/img/hero-poster.webp"
-                aria-label="AI Robot">
+            <div className="hero-image">
+              <video className="hero-media" autoPlay loop muted playsInline preload="auto" width="534" height="668" aria-label="AI Robot">
                 <source src="/assets/img/hero.webm" type="video/webm" />
                 <source src="/assets/img/hero.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
-
         </div>
       </div>
     </section>
